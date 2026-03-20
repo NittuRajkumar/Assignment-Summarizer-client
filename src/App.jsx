@@ -18,7 +18,7 @@ function App() {
     setError('');
     setResult(null);
     try {
-      const response = await fetch('http://localhost:5000/api/summarize', {
+      const response = await fetch('https://assignment-summarizer-server.onrender.com/api/summarize', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
